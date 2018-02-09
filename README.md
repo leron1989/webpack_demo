@@ -12,7 +12,7 @@ npm install --save-dev file-loader
 npm install --save-dev csv-loader xml-loader
 
 四、管理输出
-1. 通过给入口给文件定义名称，可以在输出时自动生成响应文件名称。如下方output.filename中的[name]对应entry中的app及print。
+1. 通过给入口给文件定义名称，可以在输出时自动生成响应文件名称。如下方output.filename中的[name]对应entry中的app及print。\n
     entry:{
             app:'./src/index.js',
             print:'./src/print.js'
@@ -23,11 +23,12 @@ npm install --save-dev csv-loader xml-loader
     }
 
 2. 当我们改变entry的中入口的名称，重新构建的数据将被重新命名。但是我们的index.html文件引用的仍然时旧的名称。此时我们可以通过HtmlWebpackPlugin插件来解决这个问题。
+
     2.1. 首先需要安装插件：
     npm install --save-dev html-webpack-plugin
 
     2.2. 其次在webpack.config.js中增加插件配置：
-    增加配置文件首先需要引入HtmlWebpackPlugin:
+    增加配置文件首先需要引入HtmlWebpackPlugin:\n
     const HtmlWebpackPlugin = require('html-webpack-plugin');
     其次，增加配置：
     plugins:[
