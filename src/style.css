@@ -1,5 +1,5 @@
 
-@font-face{
+/* @font-face{
     font-family: 'SerendityFont';
     src:url('./Serendity Script.woff2') format('woff2'),
         url('./Serendity Script.woff') format('woff');
@@ -12,4 +12,9 @@
     color:red;
     font-family: 'SerendityFont';
     background: url('./timg.jpg');
+} */
+
+body {
+    /* background: blue; */
+    background: red;
 }
